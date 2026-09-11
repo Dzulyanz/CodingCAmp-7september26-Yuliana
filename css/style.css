@@ -130,7 +130,7 @@ h1 {
 }
 
 .date-badge {
-  min-width: 135px;
+  min-width: 170px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +140,8 @@ h1 {
   border: 1px solid var(--border);
   color: var(--primary-dark);
   font-weight: 700;
+  font-size: 0.82rem;
+  white-space: nowrap;
 }
 
 .dashboard-grid {

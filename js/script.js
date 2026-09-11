@@ -142,6 +142,21 @@ function generateId() {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
+function updateDateTime() {
+  const now = new Date();
+  const dateText = new Intl.DateTimeFormat('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric'
+  }).format(now);
+  const timeText = new Intl.DateTimeFormat('en-US', {
+    hour: '2-digit',
+    minute: '2-digit'
+  }).format(now);
+
+  dateLabelEl.textContent = `${dateText} • ${timeText}`;
+}
+
 function setGreeting() {
   const now = new Date();
   const hour = now.getHours();
@@ -156,14 +171,7 @@ function setGreeting() {
 
   greetingEl.textContent = name ? `${greetingMessage}, ${name}` : `${greetingMessage}!`;
   nameInputEl.value = name;
-
-  const dateText = new Intl.DateTimeFormat('en-US', {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric'
-  }).format(now);
-
-  dateLabelEl.textContent = dateText;
+  updateDateTime();
 }
 
 function renderTodos() {
@@ -417,6 +425,7 @@ const savedTheme = localStorage.getItem(THEME_KEY) || 'light';
 applyTheme(savedTheme);
 applyAccent(getStoredAccent());
 setGreeting();
+setInterval(updateDateTime, 1000);
 syncTimerInputs();
 setTimerMode(currentMode);
 renderTodos();
