@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Dashboard</title>
+    <meta
+      name="description"
+      content="A simple productivity dashboard with greeting, focus timer, tasks, and quick links."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Daily overview</p>
+          <h1 id="greeting">Good morning, Yuliana</h1>
+        </div>
+        <div class="topbar-actions">
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <div class="date-badge" id="dateLabel">Now</div>
+        </div>
+      </header>
+
+      <main class="dashboard-grid">
+        <div class="left-column-stack">
+          <div class="name-box setting-group">
+            <label for="nameInput">Your name</label>
+            <input id="nameInput" type="text" maxlength="30" placeholder="Enter your name" />
+          </div>
+
+          <section class="panel focus-panel">
+            <div class="panel-header">
+              <span class="panel-tag">Focus</span>
+              <h2>Focus Timer</h2>
+            </div>
+          <div class="timer-wrap">
+            <div class="timer-display" id="timerDisplay">25:00</div>
+            <p class="timer-status" id="timerStatus">Ready to work</p>
+          </div>
+          <div class="mode-switcher" aria-label="Timer mode selector">
+            <button class="mode-btn active" type="button" data-mode="focus">Focus</button>
+            <button class="mode-btn" type="button" data-mode="short">Short Break</button>
+            <button class="mode-btn" type="button" data-mode="long">Long Break</button>
+          </div>
+
+          <div class="timer-settings">
+            <label for="pomodoroInput">Pomodoro length</label>
+            <div class="timer-input-row">
+              <input id="pomodoroInput" type="number" min="1" max="90" value="25" />
+              <span>minutes</span>
+            </div>
+          </div>
+            <div class="timer-controls">
+              <button class="primary" data-action="start">Start</button>
+              <button class="secondary" data-action="pause">Pause</button>
+              <button class="ghost" data-action="reset">Reset</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel todo-panel">
+          <div class="panel-header">
+            <span class="panel-tag">Tasks</span>
+            <h2>To-Do List</h2>
+          </div>
+
+          <form id="todoForm" class="todo-form">
+            <input
+              id="todoInput"
+              type="text"
+              maxlength="120"
+              placeholder="Add a task for today"
+              aria-label="Add a new task"
+            />
+            <button type="submit" class="primary">Add</button>
+          </form>
+
+          <div class="todo-meta">
+            <span id="todoCount">0 tasks left</span>
+          </div>
+
+          <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+        </section>
+
+        <aside class="panel links-panel">
+          <div class="panel-header">
+            <span class="panel-tag">Quick access</span>
+            <h2>Quick Links</h2>
+          </div>
+
+          <div class="settings-panel">
+            <div class="setting-group color-group">
+              <label>Accent color</label>
+              <div class="color-picker-row">
+                <button class="color-swatch active" type="button" data-accent="#5b6cff" style="--swatch:#5b6cff" aria-label="Blue accent"></button>
+                <button class="color-swatch" type="button" data-accent="#2ec4b6" style="--swatch:#2ec4b6" aria-label="Teal accent"></button>
+                <button class="color-swatch" type="button" data-accent="#ff7f50" style="--swatch:#ff7f50" aria-label="Coral accent"></button>
+                <button class="color-swatch" type="button" data-accent="#f4b942" style="--swatch:#f4b942" aria-label="Gold accent"></button>
+                <button class="color-swatch" type="button" data-accent="#e87ac2" style="--swatch:#e87ac2" aria-label="Pink accent"></button>
+                <button class="color-swatch" type="button" data-accent="#7d7dff" style="--swatch:#7d7dff" aria-label="Purple accent"></button>
+                <button class="color-swatch" type="button" data-accent="#00b894" style="--swatch:#00b894" aria-label="Emerald accent"></button>
+                <button class="color-swatch" type="button" data-accent="#ff4d6d" style="--swatch:#ff4d6d" aria-label="Rose accent"></button>
+                <button class="color-swatch" type="button" data-accent="#00a8ff" style="--swatch:#00a8ff" aria-label="Sky accent"></button>
+                <button class="color-swatch" type="button" data-accent="#a78bfa" style="--swatch:#a78bfa" aria-label="Lavender accent"></button>
+                <button class="color-swatch" type="button" data-accent="#f97316" style="--swatch:#f97316" aria-label="Orange accent"></button>
+                <button class="color-swatch" type="button" data-accent="#10b981" style="--swatch:#10b981" aria-label="Green accent"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="link-grid">
+            <a class="quick-link" href="https://mail.google.com" target="_blank" rel="noreferrer">
+              <span>Gmail</span>
+              <small>Inbox</small>
+            </a>
+            <a class="quick-link" href="https://calendar.google.com" target="_blank" rel="noreferrer">
+              <span>Calendar</span>
+              <small>Schedule</small>
+            </a>
+            <a class="quick-link" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <span>Instagram</span>
+              <small>Social</small>
+            </a>
+            <a class="quick-link" href="https://www.youtube.com" target="_blank" rel="noreferrer">
+              <span>YouTube</span>
+              <small>Learn</small>
+            </a>
+            <a class="quick-link" href="https://github.com" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <small>Code</small>
+            </a>
+            <a class="quick-link" href="https://www.wikipedia.org" target="_blank" rel="noreferrer">
+              <span>Wiki</span>
+              <small>Reference</small>
+            </a>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <div id="timerPopup" class="timer-popup" role="alert" aria-live="assertive">
+      Time is up!
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

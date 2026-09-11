@@ -1,0 +1,213 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `index.html` with semantic markup for all four dashboard components": [
+      {
+        "executionId": "36e171d3-1ebc-4a97-9c16-f8caf6db63a9",
+        "chatSessionId": "sess_9c89be73-dd3c-4b18-9eca-5d3018b5ad2c",
+        "timestamp": 1789056811461
+      },
+      {
+        "executionId": "36e171d3-1ebc-4a97-9c16-f8caf6db63a9",
+        "chatSessionId": "sess_9c89be73-dd3c-4b18-9eca-5d3018b5ad2c",
+        "timestamp": 1789057909227
+      }
+    ],
+    "1.2 Create `css/style.css` with CSS custom properties, reset baseline, and card skeleton": [
+      {
+        "executionId": "47353062-b804-4986-9f47-6cb78d39d444",
+        "chatSessionId": "sess_4955084c-d759-4a7e-bff2-517f84a798f6",
+        "timestamp": 1789057937777
+      },
+      {
+        "executionId": "47353062-b804-4986-9f47-6cb78d39d444",
+        "chatSessionId": "sess_4955084c-d759-4a7e-bff2-517f84a798f6",
+        "timestamp": 1789058035152
+      }
+    ],
+    "1.3 Create `js/app.js` with IIFE wrapper and empty controller stubs": [
+      {
+        "executionId": "e9299c7d-ad71-497c-97e6-632a0b6601a9",
+        "chatSessionId": "sess_82280f9a-ec3c-40cd-846d-fe458c13ec7c",
+        "timestamp": 1789058059911
+      },
+      {
+        "executionId": "e9299c7d-ad71-497c-97e6-632a0b6601a9",
+        "chatSessionId": "sess_82280f9a-ec3c-40cd-846d-fe458c13ec7c",
+        "timestamp": 1789058620774
+      }
+    ],
+    "1. Scaffold project structure and HTML skeleton": [
+      {
+        "executionId": "e9299c7d-ad71-497c-97e6-632a0b6601a9",
+        "chatSessionId": "sess_82280f9a-ec3c-40cd-846d-fe458c13ec7c",
+        "timestamp": 1789058621014
+      }
+    ],
+    "2.1 Implement `StorageManager._load` and `StorageManager._save` with full error handling": [
+      {
+        "executionId": "7ab1097e-97cb-4fe3-9f95-070ca0a6a4b1",
+        "chatSessionId": "sess_74d3f490-1fcc-4cdb-af6b-e025ede48e1b",
+        "timestamp": 1789058644711
+      },
+      {
+        "executionId": "7ab1097e-97cb-4fe3-9f95-070ca0a6a4b1",
+        "chatSessionId": "sess_74d3f490-1fcc-4cdb-af6b-e025ede48e1b",
+        "timestamp": 1789058683166
+      }
+    ],
+    "2. Implement StorageManager": [
+      {
+        "executionId": "7ab1097e-97cb-4fe3-9f95-070ca0a6a4b1",
+        "chatSessionId": "sess_74d3f490-1fcc-4cdb-af6b-e025ede48e1b",
+        "timestamp": 1789058683363
+      }
+    ],
+    "3. Implement GreetingController": [
+      {
+        "executionId": "bd0c37f8-cc38-44ab-9053-0800270ee595",
+        "chatSessionId": "sess_de07ada4-5653-4f12-95ca-bf2eaa0509d0",
+        "timestamp": 1789058713158
+      },
+      {
+        "executionId": "b2ecc784-943d-4c87-b0d5-f0bb9b7b12bc",
+        "chatSessionId": "sess_d91f3191-fedc-4d59-9db2-2eaf810133e2",
+        "timestamp": 1789058814639
+      }
+    ],
+    "3.1 Implement `GreetingController._greetingFor(hour)` mapping function": [
+      {
+        "executionId": "bd0c37f8-cc38-44ab-9053-0800270ee595",
+        "chatSessionId": "sess_de07ada4-5653-4f12-95ca-bf2eaa0509d0",
+        "timestamp": 1789058718276
+      },
+      {
+        "executionId": "bd0c37f8-cc38-44ab-9053-0800270ee595",
+        "chatSessionId": "sess_de07ada4-5653-4f12-95ca-bf2eaa0509d0",
+        "timestamp": 1789058748196
+      }
+    ],
+    "3.3 Implement `GreetingController._render()` and `GreetingController.init()`": [
+      {
+        "executionId": "b2ecc784-943d-4c87-b0d5-f0bb9b7b12bc",
+        "chatSessionId": "sess_d91f3191-fedc-4d59-9db2-2eaf810133e2",
+        "timestamp": 1789058781783
+      },
+      {
+        "executionId": "b2ecc784-943d-4c87-b0d5-f0bb9b7b12bc",
+        "chatSessionId": "sess_d91f3191-fedc-4d59-9db2-2eaf810133e2",
+        "timestamp": 1789058814389
+      }
+    ],
+    "4. Implement FocusTimerController": [
+      {
+        "executionId": "84b82aef-b1d6-455a-a422-06c4ed314c29",
+        "chatSessionId": "sess_11d69307-03d0-426b-958d-d18b33a20504",
+        "timestamp": 1789058841916
+      },
+      {
+        "executionId": "84b82aef-b1d6-455a-a422-06c4ed314c29",
+        "chatSessionId": "sess_11d69307-03d0-426b-958d-d18b33a20504",
+        "timestamp": 1789058888579
+      }
+    ],
+    "4.3 Implement `_tick()` with wall-clock drift correction": [
+      {
+        "executionId": "13705f97-ae86-476e-b810-54c0f7a6e39b",
+        "chatSessionId": "sess_9a08fb2f-cdf5-4645-93fd-6ab9bd23b1cf",
+        "timestamp": 1789058918427
+      }
+    ],
+    "4.4 Implement Start, Stop, Reset handlers and `_onComplete()`": [
+      {
+        "executionId": "87820d68-e5d0-40c2-88e2-dac946c37ec2",
+        "chatSessionId": "sess_52486fab-e15e-4b62-8fcb-d50cca0c4094",
+        "timestamp": 1789058951586
+      },
+      {
+        "executionId": "87820d68-e5d0-40c2-88e2-dac946c37ec2",
+        "chatSessionId": "sess_52486fab-e15e-4b62-8fcb-d50cca0c4094",
+        "timestamp": 1789059293274
+      }
+    ],
+    "6.1 Implement `TodoController.init()` and `_render()`": [
+      {
+        "executionId": "d9e222ba-1188-49c3-9aab-92c5385c1ea7",
+        "chatSessionId": "sess_28ff2449-0dc1-4150-bbe8-24d855a1e239",
+        "timestamp": 1789059304417
+      },
+      {
+        "executionId": "d9e222ba-1188-49c3-9aab-92c5385c1ea7",
+        "chatSessionId": "sess_28ff2449-0dc1-4150-bbe8-24d855a1e239",
+        "timestamp": 1789059771595
+      }
+    ],
+    "6.2 Implement `_addTask(description)`": [
+      {
+        "executionId": "b4c6f31c-9f0c-4dc3-8573-bd2f0fb94b56",
+        "chatSessionId": "sess_cde32f1d-f1d4-47a9-bf42-963d9d71fe82",
+        "timestamp": 1789059810376
+      },
+      {
+        "executionId": "b4c6f31c-9f0c-4dc3-8573-bd2f0fb94b56",
+        "chatSessionId": "sess_cde32f1d-f1d4-47a9-bf42-963d9d71fe82",
+        "timestamp": 1789059839835
+      }
+    ],
+    "6.5 Implement `_editTask(id, description)` and edit-mode lock": [
+      {
+        "executionId": "eb41a6a8-5687-478f-a7e0-9329df7a8397",
+        "chatSessionId": "sess_354133b9-acf3-4804-8223-faa4bde6cced",
+        "timestamp": 1789059872544
+      },
+      {
+        "executionId": "eb41a6a8-5687-478f-a7e0-9329df7a8397",
+        "chatSessionId": "sess_354133b9-acf3-4804-8223-faa4bde6cced",
+        "timestamp": 1789059963122
+      }
+    ],
+    "6.7 Implement `_toggleTask(id)` and `_deleteTask(id)`": [
+      {
+        "executionId": "cb7cfb38-9fc2-4d64-9da6-7d33b2d28bf6",
+        "chatSessionId": "sess_527d5e13-78dd-495b-8db2-d2b0417a176d",
+        "timestamp": 1789059979908
+      },
+      {
+        "executionId": "cb7cfb38-9fc2-4d64-9da6-7d33b2d28bf6",
+        "chatSessionId": "sess_527d5e13-78dd-495b-8db2-d2b0417a176d",
+        "timestamp": 1789060026040
+      }
+    ],
+    "6. Implement TodoController": [
+      {
+        "executionId": "cb7cfb38-9fc2-4d64-9da6-7d33b2d28bf6",
+        "chatSessionId": "sess_527d5e13-78dd-495b-8db2-d2b0417a176d",
+        "timestamp": 1789060026234
+      }
+    ],
+    "7.1 Implement `QuickLinksController.init()` and `_render()`": [
+      {
+        "executionId": "f9dcd6e5-6b9e-4205-8eaf-94308ae07e87",
+        "chatSessionId": "sess_9730d38a-6f9c-4ac1-87bb-69ecc11eb81f",
+        "timestamp": 1789060055201
+      },
+      {
+        "executionId": "f9dcd6e5-6b9e-4205-8eaf-94308ae07e87",
+        "chatSessionId": "sess_9730d38a-6f9c-4ac1-87bb-69ecc11eb81f",
+        "timestamp": 1789060117732
+      }
+    ],
+    "7.2 Implement URL normalisation and `_addLink(label, url)`": [
+      {
+        "executionId": "300c7fd4-6dad-4aff-baee-ec409b0ce19d",
+        "chatSessionId": "sess_1dc3c5b5-c020-4c80-8307-49583d348d99",
+        "timestamp": 1789060127228
+      },
+      {
+        "executionId": "300c7fd4-6dad-4aff-baee-ec409b0ce19d",
+        "chatSessionId": "sess_1dc3c5b5-c020-4c80-8307-49583d348d99",
+        "timestamp": 1789060181104
+      }
+    ]
+  }
+}
