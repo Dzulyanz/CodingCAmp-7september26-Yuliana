@@ -53,7 +53,7 @@ function saveTodos() {
 }
 
 function getStoredName() {
-  return localStorage.getItem(NAME_KEY) || 'Yuliana';
+  return localStorage.getItem(NAME_KEY) || '';
 }
 
 function getPomodoroDuration() {
@@ -145,7 +145,7 @@ function generateId() {
 function setGreeting() {
   const now = new Date();
   const hour = now.getHours();
-  const name = getStoredName().trim() || 'Yuliana';
+  const name = getStoredName().trim();
 
   let greetingMessage = 'Good evening';
   if (hour < 12) {
@@ -154,7 +154,7 @@ function setGreeting() {
     greetingMessage = 'Good afternoon';
   }
 
-  greetingEl.textContent = `${greetingMessage}, ${name}`;
+  greetingEl.textContent = name ? `${greetingMessage}, ${name}` : `${greetingMessage}!`;
   nameInputEl.value = name;
 
   const dateText = new Intl.DateTimeFormat('en-US', {
@@ -378,7 +378,7 @@ document.querySelectorAll('[data-action]').forEach((button) => {
 });
 
 nameInputEl.addEventListener('input', (event) => {
-  const value = event.target.value.trim() || 'Yuliana';
+  const value = event.target.value.trim();
   localStorage.setItem(NAME_KEY, value);
   setGreeting();
 });
